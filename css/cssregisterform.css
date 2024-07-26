@@ -1,0 +1,126 @@
+body {
+    margin-top: 2rem;
+    font-family: "Inconsolata", sans-serif;
+    background-image: url(../img/blg1.jpg);
+    background-repeat: cover;
+    }
+    main {
+        background-color: rgb(4, 4, 4);
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        margin: auto;
+        padding: 1rem;
+        max-width: 55rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+    .imgContainer {
+        display: flex;
+        flex: 1;
+    }
+    .formContainer {
+        height: 100%;
+        max-height: 500px;
+        }
+    img {
+        width: 400px;
+        height: 600px;
+        object-fit:cover;
+        margin: auto;
+    }
+    /* รูปแบบวางฟอร์มให้ดูเรียบร้อยขึ้น */
+    form {  
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: 5px solid hsl(203, 52%, 32%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    }
+        h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 150%;
+        color: black;
+        }
+
+        button[type="submit"]{
+        background-color: #000000;
+        color: white;
+        font: 1rem sans-serif;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        padding: 0.75rem 1.25rem;
+        width: 7em;
+        height: 2em;
+        padding: 0px;
+        }
+        input:focus,
+        select:focus{
+        outline: none;
+        box-shadow: 0 0 0 4px rgb(228, 4, 4);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+        font:1.25em;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid salmon;
+        }
+        select{ 
+        width: 100%;
+        font-size: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid salmon;
+        }
+        .nameInput { /*Firstname-Lastname*/
+        display: flex;
+        gap: 30px;
+        }
+        .inputGroup { /*email password username confirmpassword*/
+        margin-top: 30px; 
+        display: flex;
+        flex-direction: column;
+        }
+        .registerButton { 
+        margin-top: 20px; 
+        }
+        .center { 
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .gender{ 
+            margin-top: 30px;
+        }
+
+        
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #333; /* Change the color to match your design */
+        }
+        
+        .back-button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        /* Additional styles for the icon */
+        ion-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }

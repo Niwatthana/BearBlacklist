@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BearBlacklist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 95%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("img/bgl.jpg");
+            min-height: 100%;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        li {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <header class="p-3 bg-white text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="img/icon.png" alt="teenbear" width="50">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-4 text-dark">Home</a></li>
+                    <li><a href="#" class="nav-link px-4 text-dark">Features</a></li>
+                    <li><a href="#" class="nav-link px-4 text-dark">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-4 text-dark">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-4 text-dark">About</a></li>
+                </ul>
+
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form> -->
+
+                <!-- <div class="d-grid gap-2 col-1 mx-auto">
+          <button type="button" class="btn btn-light btn-lg">Login</button>
+        </div> -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                    <a href="index.php" type="button" class="btn btn-dark btn-lg">Logout</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- รูปเรา -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+        <div class="w3-sand w3-grayscale w3-large">
+
+            <!-- นาฬกา -->
+            <div class="w3-container" id="where" style="padding-bottom:32px;">
+                <div class="w3-content" style="max-width:700px">
+                    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">กรอกข้อมูล</span></h5>
+                    <p>เบอร์ที่คุณต้องการแจ้งว่าเป็นเบอร์ที่ไม่มีความน่าเชื่อถือ </p>
+                    <img src="img/icon.png" class="w3-image" style="width:20%">
+                    <p><span class="w3-tag">กรุณาแจ้ง!</span></p>
+                    <p><strong>BearBlacklist</strong> เพื่อเตือนให้ประชาชนรับทราบว่าเป็นเบอร์ที่มีความน่าเชื่อถือหรือไม่:</p>
+                    <form action="admin/tableuser.php" > <!-- target="_blank" -->
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="ชื่อผู้แจ้ง" required name="Name"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                        <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+    </header>
+
+
+
+
+
+
+</body>
+
+</html>
